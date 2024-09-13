@@ -18,3 +18,5 @@ else if (imc <= 30.0 && imc > 25.0) {
 else {
     alert(`Obeso.`);
 }
+
+//
