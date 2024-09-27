@@ -1,0 +1,96 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Formata o documento html tirando todos os espaços, etc.*/
+
+/*======================================================================
+                                Geral
+=======================================================================*/
+body{
+    margin: 0vw 2vw 2vw 10vw;
+}
+html{
+    background: linear-gradient(to right, #FFDEAD, rgb(54, 165, 96))
+}
+
+
+/*======================================================================
+                                TOPO
+=======================================================================*/
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+header nav ul {
+    display: flex;
+    justify-content: right;
+    margin: 0 0vw 0vw;
+}
+body header div.divPrincipal{
+    display: flex;
+}
+body header div.divDois nav ul li a  {
+    justify-content: right;
+
+}
+body header div.divDois{
+    display: flex;
+    justify-content:right;
+    margin: 0vw 0 0 50vw
+    
+} 
+body header div.divPrincipal div.divDois nav ul li{
+    display: flex;
+    justify-content:right;
+    margin: 2.5vw 1vw 0 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body header div.divPrincipal div img{
+    margin: 1.05vw 0 0 0 ;
+}
