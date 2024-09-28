@@ -1,68 +1,143 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-<body>
-    <header>
-        <div class="divPrincipal">
-        <div>
-        <img src="src/logo.png" alt="" width="50" height="50"
-        100>
-        </div>
-        <div class="divDois">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Dieta</a>
-                </li>
-                <li>
-                    <a href="#">Balança</a>
-                </li>
-                <li>
-                    <a href="#">Sono</a>
-                </li>
-                <li>
-                    <a href="#">Sobre</a>
-                </li>
-            </ul>
-        </nav>
-       </div>
-    </div>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-    </header>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Formata o documento html tirando todos os espaços, etc.*/
+
+/*======================================================================
+                                Geral
+=======================================================================*/
+body{
+    margin: 0vw 8vw 2vw 8vw;
+    color: #FFFFFF;
     
-    <main>
-    <section class="banner">
-        <div class="divBanner">
-        <div>
-            <p><img src="src/logo.png" alt="logo"></p>
-        </div>
-        <div>
-            <h1>Alimentação Equilibrada</h1>
-            <h2>Nutrição que transforma, saúde que inspira</h2>
-        </div>
-        </div>
-        <div>
-        <h1>Seja bem-vindo</h1>
-        <p>
-            Aqui você encontrará diversas utilidades, independente de seu critério! Nosso site é totalmente interativo conforme seu gosto!
-        </p>
-            </div>
-            
+}
+html{
+    background: linear-gradient(to right, #329b66, #034d3e)
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+/*======================================================================
+                                Topo
+=======================================================================*/
+header div.divPrincipal div img{
+    margin: 1.7vw 0 0 0;
+}
+header div.divPrincipal{
+    display: flex;
+}
+header div.divPrincipal {
+    justify-content:space-between;
 
-
+}
+header div.divPrincipal div.divDois nav ul{
+    display: flex;
+    margin: 3vw 0 0 0;
     
-    </main>
-</body>
-</html>
+}
+header div.divPrincipal div.divDois nav ul li a {
+    padding: 0 3vw 0 0;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+/*
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(207, 204, 204);
+}
+header nav ul {
+    display: flex;
+    justify-content: right;
+    margin: 0 0vw 0vw;
+}
+body header div.divPrincipal{
+    display: flex;
+}
+body header div.divDois nav ul li a  {
+    justify-content: right;
+
+}
+body header div.divDois{
+    display: flex;
+    justify-content:right;
+    margin: 0vw 0 0 50vw
+    
+} 
+body header div.divPrincipal div.divDois nav ul li{
+    display: flex;
+    justify-content:right;
+    margin: 2.5vw 1vw 0 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body header div.divPrincipal div img{
+    margin: 1.05vw 0 0 0 ;
+
+}
+main section.banner div.divBanner{
+    display: flex;
+}
+main section.banner div.divBanner div h1{
+    font-size: 50px;
+}
+main section.banner div.divBanner div h2{
+    font-size: 20px;
+}
+*/
 
