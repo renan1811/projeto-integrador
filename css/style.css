@@ -46,15 +46,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*Formata o documento html tirando todos os espaços, etc.*/
+
+/* COMEÇO DO CSS */
 
 /*======================================================================
                                 Geral
 =======================================================================*/
 body{
-    margin: 0vw 8vw 2vw 8vw;
+    margin: 0vw 0vw 2vw 0vw;
     color: #FFFFFF;
-    
 }
 html{
     background: linear-gradient(to right, #329b66, #034d3e)
@@ -66,78 +66,114 @@ a {
 /*======================================================================
                                 Topo
 =======================================================================*/
-header div.divPrincipal div img{
-    margin: 1.7vw 0 0 0;
-}
-header div.divPrincipal{
-    display: flex;
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 50%;
+    height: 80px;
 }
 header div.divPrincipal {
-    justify-content:space-between;
-
-}
-header div.divPrincipal div.divDois nav ul{
     display: flex;
-    margin: 3vw 0 0 0;
-    
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
-header div.divPrincipal div.divDois nav ul li a {
-    padding: 0 3vw 0 0;
+header div.divDois ul li {
+    margin: 0;
+    padding: 0 35px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-header nav ul li a {
-    text-decoration: none;
-    color: rgb(207, 204, 204);
-}
-header nav ul {
-    display: flex;
-    justify-content: right;
-    margin: 0 0vw 0vw;
-}
-body header div.divPrincipal{
+header div.divDois ul{
     display: flex;
 }
-body header div.divDois nav ul li a  {
-    justify-content: right;
+header div.divPrincipal div.image a{
+    margin: 15px 0 15px 35px;
+    font-size: 1.9rem;
+}
+header div.divPrincipal div.divDois nav ul li.food{
+    margin: 0 1.5vw 0 0;
+}
 
-}
-body header div.divDois{
-    display: flex;
-    justify-content:right;
-    margin: 0vw 0 0 50vw
-    
-} 
-body header div.divPrincipal div.divDois nav ul li{
-    display: flex;
-    justify-content:right;
-    margin: 2.5vw 1vw 0 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-body header div.divPrincipal div img{
-    margin: 1.05vw 0 0 0 ;
+/*======================================================================
+                                Main
+=======================================================================*/
 
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
 }
-main section.banner div.divBanner{
+.slider-content {
+    width: 400%;
+    height: auto;
     display: flex;
 }
-main section.banner div.divBanner div h1{
-    font-size: 50px;
+.slider-content input {
+    display: none;
 }
-main section.banner div.divBanner div h2{
-    font-size: 20px;
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
 }
-*/
+.slide-box img {
+    width: 100%;
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-manual .manual-btn:not(:last-child) .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover {
+    background-color: #FFFFFF;
+}
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background-color: aqua;
+}
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: aqua;
+}
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: aqua;
+}
+/*======================================================================
+                                Footer
+=======================================================================*/
 
+footer{
+    margin: 5vw 0 0 0;
+}
+footer div.footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer div.footer div a{
+    padding: 10px;
+    font-size: 2rem;
+}
+footer div.linhas{
+    margin: 0 2vw 0 2vw;
+}
+footer div.footer div.logos a{
+    padding: 30px;
+    font-size: 3rem;
+}

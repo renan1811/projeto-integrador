@@ -1,22 +1,18 @@
+var radio = document.querySelector(`.manual-btn`)
+var cont = 1
 
-//FAZER O CSS DESSA PARTE PARA O FORMULÁRIO
+document.getElementById(`radio1`).checked = true
 
-const peso = Number(prompt(`Informe o seu peso.`));
-const altura = Number(prompt(`Informe a sua altura em metros.`).replace(",","."));
+setInterval(() => {
+    proximaImg()
+}, 1000)
 
-const imc = peso / altura ** 2;
+function proximaImg(){
+    cont++
 
-if (imc <= 18.5) {
-    alert(`Subpeso.`);
+    if(cont > 3) {
+        cont = 1
+    }
+
+    document.getElementById(`radio`+cont).checked = true
 }
-else if (imc <= 25.0 && imc > 18.5) {
-    alert(`Normal.`);
-}
-else if (imc <= 30.0 && imc > 25.0) {
-    alert(`Sobrepeso.`);
-}
-else {
-    alert(`Obeso.`);
-}
-
-//
